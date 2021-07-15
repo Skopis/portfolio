@@ -1,31 +1,192 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root {
+  --primary-light: #dbffff;
+  --primary-orange: #f7ab00;
+  --primary-dark: #212529;
+  --primary-bgc: #d4f4e7;
+}
 
-body{
-  font-family: 'Roboto Condensed', sans-serif !important;
-} */
+*{
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
 
-/******* NAVBAR *******/
-.logo{
-  max-height: 3rem;
+#root {
+  background-color: var(--primary-dark);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*************************** NAVBAR ***************************/
+
+.logo {
+  max-height: 4.1rem;
 }
 
 /* MENU LINKS */
-.nav-link{
+
+.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
   text-transform: uppercase;
-  
+  font-size: 1.4rem;
+}
+nav{
+  height: 74px;
+  z-index: 5;
 }
 
-.navbar-nav > li > a {
-  /* color: white !important; */
+.navbar-nav>li>a {
   margin: 0 0.75rem 0 0.75rem;
+  border-top: 0.188rem solid var(--primary-dark);
+  border-bottom: 0.188rem solid var(--primary-dark);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li >  a:focus, .navbar-nav > li > a:hover{
-box-shadow:  0px -0.188rem 0px 0px #e87121
+.navbar-nav>li>a.active, .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+  /* box-shadow: 0px 0.188rem 0px 0px var(--primary-orange) */
+  border-top: 0.188rem solid var(--primary-orange);
+  border-bottom: 0.188rem solid var(--primary-orange);
 }
 
 .navbar-toggler:focus {
   box-shadow: none !important;
+}
+
+/*************************** HERO ***************************/
+
+.hero-container {
+  background-color: var(--primary-bgc);
+  height: calc(100vh - 74px);
+  margin-bottom: 0 !important;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: url('./imgs/hero2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 74px);
+}
+
+.main-info {
+  z-index: 5;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  color: var(--primary-dark);
+}
+
+.main-info p {
+  font-size: 2.063rem;
+  margin-bottom: 0;
+}
+
+.main-info p span, .typed-txt {
+  text-transform: uppercase;
+}
+
+.main-info button {
+  align-self: flex-start;
+}
+
+.btn {
+  /* margin-top: calc(50% + 25px); */
+  position: relative;
+  /* display: inline-block; */
+  width: 277px;
+  /* height: 50px; */
+  /* font-size: 1em; */
+  font-weight: bold !important;
+  line-height: 50px !important;
+  text-align: center;
+  text-transform: uppercase;
+  /* background-color: transparent; */
+  cursor: pointer;
+  text-decoration: none;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-weight: 900; */
+  font-size: 20px !important;
+  /* letter-spacing: 0.045em; */
+}
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn svg rect {
+  /* stroke: #EC0033; */
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+.btn span {
+  color: #041a56;
+  background: rgb(4, 26, 86);
+  background: -moz-linear-gradient(left, rgba(4, 26, 86, 1) 0%, rgba(225, 120, 237, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(4, 26, 86, 1) 0%, rgba(225, 120, 237, 1) 100%);
+  background: linear-gradient(to right, rgba(4, 26, 86, 1) 0%, rgba(225, 120, 237, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+html {
+  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+div {
+  margin-bottom: 3rem;
+}
+
+div:last-child {
+  margin-bottom: 0;
+}
+
+.typed-txt {
+  font-size: 2.063rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+#tsparticles{
+  margin-bottom: 0;
+}
+
+.tsparticles-canvas-el {
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  height:100vh;
+}
+
+/*-------------------ABOUT-------------------- */
+
+.about-container {
+  z-index: 5;
+  background-color: var(--primary-dark);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1.25rem 0;
+}
+
+.about-container p, .about-container .typed-txt {
+  color: var(--primary-light)
 }
