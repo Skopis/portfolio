@@ -3,8 +3,8 @@ import Typed from "react-typed";
 
 const About = () => {
     return (
-        <div className="about-container container">
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_i0dv6y4w.json" background="transparent" speed="1" style={{ width: '300px', height: '300px' }} loop autoplay></lottie-player>
+        <div id="about" className="about-container container">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_i0dv6y4w.json" background="transparent" speed="1" style={{ width: '18.75rem', height: '18.75rem' }} loop autoplay></lottie-player>
             <div className="about-content">
                 <p>Passionate Full Stack Developer,</p>
                 <p>with experience in writing single-page-applications</p>
@@ -16,7 +16,8 @@ const About = () => {
                     backSpeed={60}
                     loop
                 />
-
+                <p className="par">Fast learner, super organized, with great attention to details</p>
+                <p>Very Positive with an everything-is-possible 😊 attitude</p>
             </div>
         </div>
     )

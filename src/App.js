@@ -2,15 +2,34 @@ import "./App.css";
 import NavBar from "./cmps/NavBar";
 import Hero from "./cmps/Hero";
 import About from "./cmps/About"
+import Specialties from "./cmps/Specialties";
 import "bootstrap/dist/css/bootstrap.min.css"
 import Particles from 'react-particles-js';
+import { BrowserRouter } from 'react-router-dom';
+import { useEffect } from "react"
+import $ from "jquery";
+import "animate.css/animate.min.css";
 
 
 function App() {
+  useEffect(() => {
+    $(document).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        // $('#dynamic').addClass('newClass');
+        $('.nav-link').removeClass('selected');
+        $('.nav-link').css('color', "#ffffff8c");
+      } 
+      
+    });
+  },[])
+
   return (
     <>
-      <NavBar />
-      <Hero />
+      <BrowserRouter>
+        <NavBar />
+        <Hero />
+      </BrowserRouter>
+
       <Particles
         params={{
           "particles": {
@@ -116,8 +135,8 @@ function App() {
         }}
       />
 
-
       <About />
+      <Specialties />
     </>
   );
 }
