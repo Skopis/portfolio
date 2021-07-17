@@ -9,14 +9,16 @@ import { BrowserRouter } from 'react-router-dom';
 import { useEffect } from "react"
 import $ from "jquery";
 import "animate.css/animate.min.css";
+import 'font-awesome/css/font-awesome.min.css';
 import Projects from "./cmps/Projects";
+import Contact from "./cmps/Contact";
+import Footer from "./cmps/Footer";
 
 
 function App() {
   useEffect(() => {
     $(document).scroll(function () {
       if ($(this).scrollTop() > 50) {
-        // $('#dynamic').addClass('newClass');
         $('.nav-link').removeClass('selected');
         $('.nav-link').css('color', "#ffffff8c");
       } 
@@ -139,7 +141,8 @@ function App() {
       <About />
       <Specialties />
       <Projects />
-      
+      <Contact />
+      <Footer />
     </>
   );
 }

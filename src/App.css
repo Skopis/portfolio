@@ -96,6 +96,7 @@ nav .nav-link {
   position: absolute;
   flex-direction: column;
   color: var(--primary-dark);
+  cursor: default;
 }
 
 .main-info p {
@@ -192,6 +193,7 @@ nav .nav-link {
   padding: 3.25rem 0;
   border-bottom: 3px solid var(--primary-orange);
   scroll-margin-top: 5rem;
+  cursor: default;
 }
 
 .about-container p, .about-container .typed-txt {
@@ -231,6 +233,7 @@ nav .nav-link {
   margin: 1rem;
   text-transform: uppercase;
   z-index: 5;
+  cursor: default;
 }
 
 .specialties-section .card img {
@@ -242,8 +245,6 @@ nav .nav-link {
 /*-------------------PROJECTS-------------------- */
 
 .projects-container {
-  /* z-index: 5;
-  background-color: var(--primary-dark); */
   scroll-margin-top: 5rem;
   padding: 2.25rem 0 3.5rem 0;
   color: var(--primary-light);
@@ -280,6 +281,14 @@ nav .nav-link {
 .proj .btn {
   background-color: #1366b2 !important;
   margin-bottom: 10px;
+  transition: 1s;
+}
+
+.proj .btn:hover {
+  background-color: #0fb9c5 !important;
+  /* color: var(--primary-dark) !important; */
+  box-shadow: inset 0px 0px 15px 2px #092d4e;
+  transition: 1s;
 }
 
 .slick-prev {
@@ -298,4 +307,76 @@ nav .nav-link {
 
 .slick-dots li button:before {
   color: #d0cfd1 !important;
+}
+
+/*-------------------CONTACT-------------------- */
+
+.contact-container {
+  z-index: 5;
+  background-color: var(--primary-dark);
+  scroll-margin-top: 5rem;
+  padding-bottom: 2.25rem;
+  color: var(--primary-light);
+  /* border-bottom: 3px solid var(--primary-orange); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form {
+  width: 30%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+form input, textarea{
+  background-color: rgba(255, 255, 255, .8) !important;
+  /* background-color: var(--primary-light) !important; */
+}
+
+form>* {
+  margin-bottom: 10px;
+}
+
+form .btn {
+  margin: 10px auto;
+  background-color: #e6bbe8;
+  color: var(--primary-dark);
+}
+
+.profile-pic {
+  box-sizing: content-box;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #0fb9c5;
+  margin: 20px;
+}
+
+/*-------------------FOOTER-------------------- */
+.footer-container{
+  z-index: 5 !important;
+}
+footer {
+  background-color: rgba(212, 244, 231, .4) !important;
+}
+
+footer .btn {
+  z-index: 50 !important;
+  cursor: pointer !important;
+}
+
+footer .text-center{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.contact-details a{
+  text-decoration: none;
+  color: white;
+}
+footer p{
+  margin: 0;
+  cursor: default;
 }
