@@ -297,14 +297,10 @@ nav .nav-link {
 .proj .btn {
   background-color: #1366b2 !important;
   margin-bottom: 10px;
-  transition: 1s;
 }
 
 .proj .btn:hover {
-  background-color: #0fb9c5 !important;
-  /* color: var(--primary-dark) !important; */
-  box-shadow: inset 0px 0px 15px 2px #092d4e;
-  transition: 1s;
+  background-color: #0d4479 !important;
 }
 
 .slick-prev {
@@ -358,18 +354,14 @@ form>* {
 
 form .btn {
   margin: 10px auto;
-  background-color: #8350ad;
-  color: var(--primary-light);
   text-transform: uppercase;
   border: none;
-  transition: 1s;
+  background-color: #8350ad !important;
+  color: var(--primary-light) !important;
 }
 
 form .btn:hover {
-  background-color: #f1d4f5 !important;
-  color: var(--primary-dark) !important;
-  box-shadow: inset 0px 0px 15px 2px #421e5f;
-  transition: 1s;
+  background-color: #52326d !important;
 }
 
 .profile-pic {
