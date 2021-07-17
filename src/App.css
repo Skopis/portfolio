@@ -317,7 +317,6 @@ nav .nav-link {
   scroll-margin-top: 5rem;
   padding-bottom: 2.25rem;
   color: var(--primary-light);
-  /* border-bottom: 3px solid var(--primary-orange); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -329,10 +328,11 @@ form {
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
 }
 form input, textarea{
-  background-color: rgba(255, 255, 255, .8) !important;
-  /* background-color: var(--primary-light) !important; */
+  /* background-color: rgba(255, 255, 255, .8) !important; */
+  background-color: var(--primary-light) !important;
 }
 
 form>* {
@@ -341,8 +341,17 @@ form>* {
 
 form .btn {
   margin: 10px auto;
-  background-color: #e6bbe8;
-  color: var(--primary-dark);
+  background-color: #8350ad;
+  color: var(--primary-light);
+  text-transform: uppercase;
+  border: none;
+  transition: 1s;
+}
+form .btn:hover{
+  background-color: #f1d4f5 !important;
+  color: var(--primary-dark) !important;
+  box-shadow: inset 0px 0px 15px 2px #421e5f;
+  transition: 1s;
 }
 
 .profile-pic {
