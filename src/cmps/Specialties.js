@@ -1,5 +1,3 @@
-import { divMode } from "tsparticles/Utils"
-import Slide from 'react-reveal/Slide';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,19 +27,19 @@ const Specialties = () => {
         <div id="specialties" className="specialties-container container">
 
             <div className="specialties-section" >
-                <div className="card" data-aos="fade-right" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-right" data-aos-duration="3000">
                     <img className="card-img-top" src={jsLogo} alt="javascript" />
                     <div className="card-body">
                         <p className="card-text">JavaScript</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-right" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-right" data-aos-duration="3000">
                     <img className="card-img-top" src={htmlLogo} alt="html" />
                     <div className="card-body">
                         <p className="card-text">HTML</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-right" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-right" data-aos-duration="3000">
                     <img className="card-img-top" src={cssLogo} alt="css" />
                     <div className="card-body">
                         <p className="card-text">CSS</p>
@@ -50,19 +48,19 @@ const Specialties = () => {
             </div>
 
             <div className="specialties-section" >
-                <div className="card" data-aos="fade-left" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-left" data-aos-duration="3000">
                     <img className="card-img-top" src={vueLogo} alt="vue" />
                     <div className="card-body">
                         <p className="card-text">Vue</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-left" data-aos-duration="3000">
                     <img className="card-img-top" src={reactLogo} alt="react" />
                     <div className="card-body">
                         <p className="card-text">React</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-left" data-aos-duration="3000">
                     <img className="card-img-top" src={reactNativeLogo} alt="react native" />
                     <div className="card-body">
                         <p className="card-text">React Native</p>
@@ -71,13 +69,13 @@ const Specialties = () => {
             </div>
 
             <div className="specialties-section">
-                <div className="card" data-aos="fade-right" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-right" data-aos-duration="3000">
                     <img className="card-img-top" src={nodeLogo} alt="node js" />
                     <div className="card-body">
                         <p className="card-text">Node JS</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-right" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-right" data-aos-duration="3000">
                     <img className="card-img-top" src={mongoLogo} alt="mongo db" />
                     <div className="card-body">
                         <p className="card-text">Mongo-DB</p>
@@ -86,19 +84,19 @@ const Specialties = () => {
             </div>
 
             <div className="specialties-section">
-                <div className="card" data-aos="fade-left" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-left" data-aos-duration="3000">
                     <img className="card-img-top" src={sassLogo} alt="sass" />
                     <div className="card-body">
                         <p className="card-text">SASS</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-left" data-aos-duration="3000">
                     <img className="card-img-top" src={bootstrapLogo} alt="bootstrap" />
                     <div className="card-body">
                         <p className="card-text">Bootstrap</p>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-left" data-aos-duration="3000" style={{ width: '18rem' }}>
+                <div className="card" data-aos="fade-left" data-aos-duration="3000">
                     <img className="card-img-top" src={materialuiLogo} alt="matireal ui" />
                     <div className="card-body">
                         <p className="card-text">Material UI</p>

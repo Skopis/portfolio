@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { useEffect } from "react"
 import $ from "jquery";
 import "animate.css/animate.min.css";
+import Projects from "./cmps/Projects";
 
 
 function App() {
@@ -137,6 +138,8 @@ function App() {
 
       <About />
       <Specialties />
+      <Projects />
+      
     </>
   );
 }

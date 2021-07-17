@@ -14,14 +14,14 @@ const Hero = () => {
                         typeSpeed={60}
                         backSpeed={120}
                     />
-                    <NavHashLink
-                        className="nav-link"
+                    
+                        <div className="hero-btn-container">
+                        <NavHashLink
+                        className="nav-link btn"
                         exact to="/#about"
                         activeClassName="selected"
                         activeStyle={{ color: '#f7ab00' }}
                     >
-                        <div className="hero-btn-container">
-                            <a href="#" className="btn">
                                 <svg width="277" height="62">
                                     <defs>
                                         <linearGradient id="grad1">
@@ -32,9 +32,9 @@ const Hero = () => {
                                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
                                 </svg>
                                 <span>Learn More</span>
-                            </a>
+                                </NavHashLink>
                         </div>
-                    </NavHashLink>
+                    
                 </div>
             </div>
         </div>
