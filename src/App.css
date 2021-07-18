@@ -13,6 +13,7 @@
 
 html {
   font-size: 16px !important;
+  overflow-x: hidden;
 }
 
 #root {
@@ -36,6 +37,8 @@ nav {
   position: fixed !important;
   width: 100vw;
   padding: 0 !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 nav .nav-link {
@@ -219,6 +222,9 @@ nav .nav-link {
 .about-container .par {
   margin-top: 1rem;
 }
+.about-content{
+  padding: 12px;
+}
 
 /*-------------------SPECIALTIES-------------------- */
 
@@ -266,6 +272,7 @@ nav .nav-link {
   color: var(--primary-light);
   margin-bottom: 2.25rem;
   border-bottom: 3px solid var(--primary-orange);
+  
 }
 
 .proj {
@@ -277,6 +284,7 @@ nav .nav-link {
   align-content: center;
   justify-items: center;
   text-transform: uppercase;
+  max-height: calc(90vh - 5rem);
 }
 
 .lowercase {
