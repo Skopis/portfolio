@@ -423,6 +423,9 @@ footer .text-center {
   text-decoration: none;
   color: white;
 }
+.contact-details a:hover{
+  text-decoration: underline;
+}
 
 footer p {
   margin: 0;
