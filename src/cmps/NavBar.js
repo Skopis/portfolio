@@ -9,7 +9,7 @@ const NavBar = () => {
             <div className="container">
                 <NavHashLink
                     className="nav-link navbar-brand"
-                    exact to="/#hero"
+                    exact to="/portfolio/#hero"
                     activeClassName="selected"
                     activeStyle={{ color: '#f7ab00' }}
                 >
@@ -23,7 +23,7 @@ const NavBar = () => {
                         <li className="nav-item active" onClick={() => setTimeout(function(){ $('.nav-link-home').css('color', "#f7ab00") }, 1000) }>
                             <NavHashLink
                                 className="nav-link nav-link-home"
-                                exact to="/#hero"
+                                exact to="/portfolio/#hero"
                                 activeClassName="selected"
                                 activeStyle={{ color: '#f7ab00' }}
                             >Home</NavHashLink>
@@ -31,7 +31,7 @@ const NavBar = () => {
                         <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-about').css('color', "#f7ab00") }, 1000)}>
                             <NavHashLink
                                 className="nav-link nav-link-about"
-                                exact to="/#about"
+                                exact to="/portfolio/#about"
                                 activeClassName="selected"
                                 activeStyle={{ color: '#f7ab00' }}
                             >About</NavHashLink>
@@ -39,7 +39,7 @@ const NavBar = () => {
                         <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-specialties').css('color', "#f7ab00") }, 1000)}>
                             <NavHashLink
                                 className="nav-link nav-link-specialties"
-                                exact to="/#specialties"
+                                exact to="/portfolio/#specialties"
                                 activeClassName="selected"
                                 activeStyle={{ color: '#f7ab00' }}
                             >Specialties</NavHashLink>
@@ -47,7 +47,7 @@ const NavBar = () => {
                         <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-projects').css('color', "#f7ab00") }, 1000)}>
                             <NavHashLink
                                 className="nav-link nav-link-projects"
-                                to="/#projects"
+                                to="/portfolio/#projects"
                                 activeClassName="selected"
                                 activeStyle={{ color: '#f7ab00' }}
                             >Projects</NavHashLink>
@@ -55,7 +55,7 @@ const NavBar = () => {
                         <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-contact').css('color', "#f7ab00") }, 1000)}>
                             <NavHashLink
                                 className="nav-link nav-link-contact"
-                                to="/#contact"
+                                to="/portfolio/#contact"
                                 activeClassName="selected"
                                 activeStyle={{ color: '#f7ab00' }}
                             >Contact</NavHashLink>
