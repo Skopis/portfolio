@@ -21,6 +21,8 @@ function App() {
       if ($(this).scrollTop() > 50) {
         $('.nav-link').removeClass('selected');       
         $('.nav-link').css('color', "#ffffff8c");
+        $('.navbar-toggler').attr("aria-expanded","false");
+        $('.navbar-collapse').removeClass('show');
       } 
       
     });
