@@ -40,10 +40,13 @@ nav {
   backface-visibility: hidden !important;
 }
 
-nav .navbar-collapse{
-  position: absolute;
-  top: 5rem !important;
-  right: 0;
+@media screen and (max-width:991px) {
+  nav .navbar-collapse{
+    position: absolute;
+    top: 5rem !important;
+    right: 0;
+  }
+
 }
 
 nav .container{
