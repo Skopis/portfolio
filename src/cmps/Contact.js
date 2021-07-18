@@ -40,44 +40,47 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="contact-container container">
-            <div>
-                <img className="profile-pic" src={ProfilePic} alt="" />
+        <div id="contact" className="container">
+            <h4>Talk to me</h4>
+            <div className="contact-container">
+                <div>
+                    <img className="profile-pic" src={ProfilePic} alt="" />
+                </div>
+                <form onSubmit={onSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="fullname">Full name</label>
+                        <input type="text"
+                            name='from_name'
+                            value={toSend.from_name}
+                            onChange={handleChange}
+                            className="form-control"
+                            id="fullname"
+                            placeholder="John Smith" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email">Email address</label>
+                        <input type="email"
+                            name='reply_to'
+                            value={toSend.reply_to}
+                            onChange={handleChange}
+                            className="form-control"
+                            id="email"
+                            placeholder="name@example.com" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="content">Message</label>
+                        <textarea className="form-control"
+                            name='message'
+                            value={toSend.message}
+                            onChange={handleChange}
+                            id="content"
+                            rows="3"
+                            placeholder="Write what's on your mind" required />
+                    </div>
+                    <button type="submit" className="btn btn-primary">Send</button>
+                    <p>{msg}</p>
+                </form>
             </div>
-            <form onSubmit={onSubmit}>
-                <div className="form-group">
-                    <label htmlFor="fullname">Full name</label>
-                    <input type="text"
-                        name='from_name'
-                        value={toSend.from_name}
-                        onChange={handleChange}
-                        className="form-control"
-                        id="fullname"
-                        placeholder="John Smith" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email address</label>
-                    <input type="email"
-                        name='reply_to'
-                        value={toSend.reply_to}
-                        onChange={handleChange}
-                        className="form-control"
-                        id="email"
-                        placeholder="name@example.com" required />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="content">Message</label>
-                    <textarea className="form-control"
-                        name='message'
-                        value={toSend.message}
-                        onChange={handleChange}
-                        id="content"
-                        rows="3"
-                        placeholder="Write what's on your mind" required />
-                </div>
-                <button type="submit" className="btn btn-primary">Talk to me!</button>
-                <p>{msg}</p>
-            </form>
         </div>
     )
 }

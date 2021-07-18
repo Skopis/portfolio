@@ -20,7 +20,7 @@ const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item active" onClick={() => setTimeout(function(){ $('.nav-link-home').css('color', "#f7ab00") }, 1000) }>
+                        <li className="nav-item active" onClick={() => {$('.navbar-toggler').attr("aria-expanded","false"); $('.navbar-collapse').removeClass('show'); setTimeout(function(){ $('.nav-link-home').css('color', "#f7ab00") }, 1000) }}>
                             <NavHashLink
                                 className="nav-link nav-link-home"
                                 exact to="/portfolio/#hero"
@@ -28,7 +28,7 @@ const NavBar = () => {
                                 activeStyle={{ color: '#f7ab00' }}
                             >Home</NavHashLink>
                         </li>
-                        <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-about').css('color', "#f7ab00") }, 1000)}>
+                        <li className="nav-item" onClick={() => {$('.navbar-toggler').attr("aria-expanded","false"); $('.navbar-collapse').removeClass('show'); setTimeout(function(){ $('.nav-link-about').css('color', "#f7ab00") }, 1000)}}>
                             <NavHashLink
                                 className="nav-link nav-link-about"
                                 exact to="/portfolio/#about"
@@ -36,7 +36,7 @@ const NavBar = () => {
                                 activeStyle={{ color: '#f7ab00' }}
                             >About</NavHashLink>
                         </li>
-                        <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-specialties').css('color', "#f7ab00") }, 1000)}>
+                        <li className="nav-item" onClick={() => {$('.navbar-toggler').attr("aria-expanded","false"); $('.navbar-collapse').removeClass('show'); setTimeout(function(){ $('.nav-link-specialties').css('color', "#f7ab00") }, 1000)}}>
                             <NavHashLink
                                 className="nav-link nav-link-specialties"
                                 exact to="/portfolio/#specialties"
@@ -44,7 +44,7 @@ const NavBar = () => {
                                 activeStyle={{ color: '#f7ab00' }}
                             >Specialties</NavHashLink>
                         </li>
-                        <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-projects').css('color', "#f7ab00") }, 1000)}>
+                        <li className="nav-item" onClick={() => {$('.navbar-toggler').attr("aria-expanded","false"); $('.navbar-collapse').removeClass('show'); setTimeout(function(){ $('.nav-link-projects').css('color', "#f7ab00") }, 1000)}}>
                             <NavHashLink
                                 className="nav-link nav-link-projects"
                                 to="/portfolio/#projects"
@@ -52,7 +52,7 @@ const NavBar = () => {
                                 activeStyle={{ color: '#f7ab00' }}
                             >Projects</NavHashLink>
                         </li>
-                        <li className="nav-item" onClick={() => setTimeout(function(){ $('.nav-link-contact').css('color', "#f7ab00") }, 1000)}>
+                        <li className="nav-item" onClick={() => {$('.navbar-toggler').attr("aria-expanded","false"); $('.navbar-collapse').removeClass('show'); setTimeout(function(){ $('.nav-link-contact').css('color', "#f7ab00") }, 1000)}}>
                             <NavHashLink
                                 className="nav-link nav-link-contact"
                                 to="/portfolio/#contact"

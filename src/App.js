@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     $(document).scroll(function () {
       if ($(this).scrollTop() > 50) {
-        $('.nav-link').removeClass('selected');
+        $('.nav-link').removeClass('selected');       
         $('.nav-link').css('color', "#ffffff8c");
       } 
       
